@@ -42,6 +42,18 @@ a {
     z-index: 1;
 }
 
+.header__inner-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #111;
+    font-size: 20px;
+}
+
+.header__inner-logo .navbar-brand-regular strong {
+    font-weight: 500;
+}
+
 .header__nav {
     display: flex;
     list-style: none;
@@ -56,6 +68,13 @@ a {
     padding: 10px 20px;
     color: #111111;
     font-size: 18px;
+}
+
+.header__nav-btn {
+    background-color: #8bacb4;
+    color: #ffffff !important;
+    border-radius: 100px;
+    margin-left: 10px;
 }
 
 /* Hamburger menu */
@@ -123,6 +142,12 @@ a {
     color: #ffcc00;
 }
 
+.sidebar ul li .header__nav-btn {
+    display: inline-block;
+    padding: 12px 20px;
+    margin-left: 0px;
+}
+
 .overlay {
     position: fixed;
     top: 0;
@@ -142,7 +167,7 @@ a {
 }
 
 /* Responsive: display hamburger menu */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
     .header__nav {
         display: none;
     }
@@ -155,7 +180,7 @@ a {
 /* Hero section */
 .hero-section {
     object-fit: cover;
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../images/hero-bg.jpg);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../images/hero-7.jpg);
     /* background-position: center center; */
     background-size: cover;
     background-repeat: no-repeat;
@@ -249,12 +274,10 @@ a {
 }
 
 .why-twitter__inner {
-    /* color: #111111; */
-    /* background-color: #f2f2f2; */
     color: #ffffff;
     background-color: #8bacb4;
     padding: 20px;
-    min-height: 280px;
+    min-height: 324px;
     margin-bottom: 20px;
 }
 
@@ -400,6 +423,7 @@ a {
     border: 2px solid #fff;
     margin-top: 30px;
     padding: 16px 30px;
+    line-height: 1.6;
 }
 
 /* Power journalist */
@@ -411,6 +435,10 @@ a {
     margin-bottom: 30px;
     padding-bottom: 30px;
     border-bottom: 1px solid #d9d9d9;
+}
+
+.power-journalist__row-content:last-child {
+    border-bottom: none;
 }
 
 .power-journalist__row-content h4 {
@@ -511,4 +539,29 @@ a {
     line-height: 1.6;
     font-weight: 500;
     margin-bottom: 20px;
+}
+
+/* FOOTER */
+.footer-section {
+    padding: 40px 0;
+}
+
+.footer-section__links ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    border-bottom: 1px solid #3d3c3c;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+}
+
+.footer-section__links ul a {
+    color: #111;
+    line-height: 1.6;
+}
+
+.footer-section__copyright {
+    text-align: center;
+    line-height: 1.6;
 }
